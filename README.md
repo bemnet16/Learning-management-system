@@ -7,7 +7,7 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Sign-up/sign-in page**
 ###### clerk authentication for secure user
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(284).png"/>
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(284).png" height="300" width="600"/>
 
 **Courses page**
 ###### Teacher/Admin to see course lists
