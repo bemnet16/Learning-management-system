@@ -7,24 +7,24 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Sign-up/sign-in page**
 ###### clerk authentication for secure user
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(284).png" height="300" width="600"/>
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(284).png" height="400" width="500"/>
 
 **Courses page**
 ###### Teacher/Admin to see course lists
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="300" width="600" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="400" width="500" />
 
 **Courses/:courseId page**
 <p align="center">
 ###### Teacher/Admin to create, edit, delete, and see full detail course
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page" height="400" />
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page"height="400" width="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="400" width="500" />
 </p>
 
 **Chapter page**
 ###### Teacher/Admin to (create, edit, delete, and see full detail) chapter for a course
 <p align="center">
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(293).png" alt="Course Page" height="400" />
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(294).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(293).png" alt="Course Page" height="400" width="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(294).png" alt="Course Page" height="400" width="500" />
 </p>
 
 **Analytics page**
