@@ -3,7 +3,7 @@
 # Introduction
 Welcome to the LMS App - a state-of-the-art Learning Management System designed to provide an interactive and comprehensive online learning experience. Built with Next.js and Express.js, this platform is equipped with advanced features for course management, student engagement, and secure, seamless user experiences.
 
-# Application Screenshots
+# Some UI Preview
 
 **Sign-up/sign-in page**
 ###### clerk authentication for secure user
@@ -14,17 +14,54 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="300" />
 
 **Courses/:courseId page**
+<p align="center">
 ###### Teacher/Admin to (create, edit, delete, and see full detail) course
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page" height="300" />
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="300" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="400" />
+</p>
 
 **Chapter page**
 ###### Teacher/Admin to (create, edit, delete, and see full detail) chapter for a course
+<p align="center">
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(293).png" alt="Course Page" height="400" />
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(294).png" alt="Course Page" height="400" />
+</p>
+
 **Analytics page**
 ###### Teacher/Admin to analyze how much course are sold and how much revenue gained
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(291).png" alt="Course Page" width="600" height="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(291).png" alt="Course Page" height="400" />
+
+**Chapter page**
+###### Customers can enroll for a course, see free chapters
+<p align="center">
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(297).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(298).png" alt="Course Page" height="400" />
+</p>
+
+**Stripe for payment process**
+###### Customers check out payment proccess
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(291).png" alt="Course Page" height="400" />
+
+**Chapter page**
+###### Customers can see course attachments, their progress after purchased the course
+<p align="center">
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(295).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(296).png" alt="Course Page" height="400" />
+</p>
+
+**Dashboard page**
+###### Customers can see their progress courses, completed courses
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(301).png" alt="Course Page" height="400" />
+
+
+**Sidebar menu/alerts**
+###### responsive and user friendly interfaces
+  <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(300).png" alt="Course Page" height="400" />
+<p align="center">
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(302).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(303).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(304).png" alt="Course Page" height="400" />
+</p>
 
 
 # Key Features
