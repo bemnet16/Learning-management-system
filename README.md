@@ -16,11 +16,21 @@ Document and Image Uploads: Utilizing UploadThing for hassle-free file managemen
 
 # Technologies Used
 
-      __This text will also be bold__
-Next.js (13.4.12)
-React (18.2.0)
-Tailwind CSS (3.3.5)
-React Hook Form, React-Quill, Recharts, Lucide-React, and more for UI/UX enhancements.
+ ## Frontend
+
+**Technologies Used:**
+- React
+- Next.js
+- Tailwind CSS
+
+**Features:**
+- Interactive UI
+- Responsive Design
+- ...
+
+**Dependencies:**
+- List any special libraries or dependencies used
+
 
 
      **Backend**
