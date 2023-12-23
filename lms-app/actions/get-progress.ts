@@ -6,7 +6,7 @@ export const getProgress = async (
 ): Promise<number[]> => {
   try {
     const publishedChapters = (
-      await axios.get(`http://127.0.0.1:5000/api/chapters/${courseId}/published`)
+      await axios.get(`${process.env.BACK_END_URL}/api/chapters/${courseId}/published`)
     ).data;
 
 

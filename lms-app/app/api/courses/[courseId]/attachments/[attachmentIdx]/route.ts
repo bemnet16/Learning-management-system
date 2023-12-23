@@ -10,7 +10,7 @@ export async function DELETE(req: Request, { params } : { params : { courseId : 
         }
 
         const {courseId, attachmentIdx} = params
-        const course = await axios.delete(`http://127.0.0.1:5000/api/courses/${courseId}/attachments/${attachmentIdx}`)
+        const course = await axios.delete(`${process.env.BACK_END_URL}/api/courses/${courseId}/attachments/${attachmentIdx}`)
 
         return new NextResponse(course.data)
 

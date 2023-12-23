@@ -17,7 +17,7 @@ export async function DELETE(req: Request, { params }: { params: { courseId: str
         }
 
 
-        const courseChapters: {_id: string, assetId: string}[] = await (await axios.get(`http://127.0.0.1:5000/api/chapters/${params.courseId}`)).data
+        const courseChapters: {_id: string, assetId: string}[] = await (await axios.get(`${process.env.BACK_END_URL}/api/chapters/${params.courseId}`)).data
         if(!courseChapters){
             return new NextResponse("Not found", { status: 404})
         }
@@ -27,12 +27,12 @@ export async function DELETE(req: Request, { params }: { params: { courseId: str
             if(chapter.assetId){
                await Video.Assets.del(chapter.assetId)
             }
-            await axios.delete(`http://127.0.0.1:5000/api/chapters/${chapter._id}/course/${params.courseId}`)
+            await axios.delete(`${process.env.BACK_END_URL}/api/chapters/${chapter._id}/course/${params.courseId}`)
         }
 
 
 
-        await axios.delete(`http://127.0.0.1:5000/api/courses/${params.courseId}`)
+        await axios.delete(`${process.env.BACK_END_URL}/api/courses/${params.courseId}`)
 
         return new NextResponse("This course successfully deleted")
     } catch (error) {
@@ -57,7 +57,7 @@ export async function PATCH(
         const values = await req.json()
 
 
-        const course = await axios.patch(`http://127.0.0.1:5000/api/courses/${courseId}`,{...values,userId})
+        const course = await axios.patch(`${process.env.BACK_END_URL}/api/courses/${courseId}`,{...values,userId})
 
         return new NextResponse(course.data)
 

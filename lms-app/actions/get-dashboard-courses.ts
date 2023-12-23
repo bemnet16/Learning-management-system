@@ -10,11 +10,11 @@ export const GetDashboardCourses = async (
   userId: string
 ): Promise<DashboardCourses> => {
   try {
-    const categories = (await axios.get("http://127.0.0.1:5000/api/category"))
+    const categories = (await axios.get(`${process.env.BACK_END_URL}/api/category`))
       .data;
     const purchasedCourses = (
       await axios.get(
-        `http://127.0.0.1:5000/api/courses/user/${userId}/purchased`
+        `${process.env.BACK_END_URL}/api/courses/user/${userId}/purchased`
       )
     ).data;
 
@@ -22,7 +22,7 @@ export const GetDashboardCourses = async (
       purchasedCourses.map(async (course: any) => {
         const publishedChapters = (
           await axios.get(
-            `http://127.0.0.1:5000/api/chapters/${course._id}/published`
+            `${process.env.BACK_END_URL}/api/chapters/${course._id}/published`
           )
         ).data;
 

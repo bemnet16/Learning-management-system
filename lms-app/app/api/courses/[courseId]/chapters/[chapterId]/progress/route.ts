@@ -15,7 +15,7 @@ export async function POST(
     const { isCompleted } = await req.json();
 
     const chapterProgress = await axios.post(
-      `http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}/progress`,
+      `${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}/progress`,
       { userId, isCompleted: isCompleted }
     );
 

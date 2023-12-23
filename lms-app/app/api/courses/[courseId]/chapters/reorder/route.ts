@@ -15,7 +15,7 @@ export async function PATCH(req: Request, { params } : { params : {courseId : st
 
 
         for(let chapter of chapterLists){
-          const res =  await axios.patch(`http://127.0.0.1:5000/api/chapters/${chapter.id}/reorder`,{position: chapter.position, courseId: courseId})
+          const res =  await axios.patch(`${process.env.BACK_END_URL}/api/chapters/${chapter.id}/reorder`,{position: chapter.position, courseId: courseId})
         }
 
         return new NextResponse("successfully reorderd", {status : 200})

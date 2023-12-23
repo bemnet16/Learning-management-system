@@ -14,7 +14,7 @@ export const getChapters = async ({
 }: getChaptersProps) => {
   try {
     const course = (
-      await axios.get(`http://127.0.0.1:5000/api/courses/${courseId}`)
+      await axios.get(`${process.env.BACK_END_URL}/api/courses/${courseId}`)
     ).data;
     const chapters: {
       _id: string;
@@ -24,7 +24,7 @@ export const getChapters = async ({
       playbackId: string;
       description: string
       isCompleted: {[key:string]: boolean}
-    }[] = (await axios.get(`http://127.0.0.1:5000/api/chapters/${courseId}/published`))
+    }[] = (await axios.get(`${process.env.BACK_END_URL}/api/chapters/${courseId}/published`))
       .data;
 
     const chapter =

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
   const courseChapters = (
     await axios(
-      `http://127.0.0.1:5000/api/chapters/${params.courseId}/published`
+      `${process.env.BACK_END_URL}/api/chapters/${params.courseId}/published`
     )
   ).data
 

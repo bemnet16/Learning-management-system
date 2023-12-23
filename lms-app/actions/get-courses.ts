@@ -15,12 +15,12 @@ type GetCourses = {
 
 export const getCourses = async ({ userId, title, categoryId }: GetCourses) => {
   try {
-    const categories = (await axios.get("http://127.0.0.1:5000/api/category"))
+    const categories = (await axios.get(`${process.env.BACK_END_URL}/api/category`))
       .data;
 
     let courses = (
       await axios.get(
-        `http://127.0.0.1:5000/api/courses?${
+        `${process.env.BACK_END_URL}/api/courses?${
           categoryId ? `categoryId=${categoryId}` : ""
         }&${title ? `title=${title}` : ""}`
       )
@@ -40,7 +40,7 @@ export const getCourses = async ({ userId, title, categoryId }: GetCourses) => {
         if (!course.purchased[userId]) {
           const chaptersLength = (
             await axios.get(
-              `http://127.0.0.1:5000/api/chapters/${course._id}/published`
+              `${process.env.BACK_END_URL}/api/chapters/${course._id}/published`
             )
           ).data.length;
 

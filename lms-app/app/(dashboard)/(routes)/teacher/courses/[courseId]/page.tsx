@@ -22,10 +22,10 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
     redirect("/");
   }
 
-  const courseRes = await fetch( `http://127.0.0.1:5000/api/courses/${params.courseId}`);
+  const courseRes = await fetch( `${process.env.BACK_END_URL}/api/courses/${params.courseId}`);
   const course = await courseRes.json();
 
-  const categoryRes = await fetch( "http://127.0.0.1:5000/api/category")
+  const categoryRes = await fetch( `${process.env.BACK_END_URL}/api/category`)
   const categories = await categoryRes.json()
 
   // interface chapterType{
@@ -35,7 +35,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
   //   position: number
   // }
 
-  const courseChaptersRes = await fetch( `http://127.0.0.1:5000/api/chapters/${params.courseId}`);
+  const courseChaptersRes = await fetch( `${process.env.BACK_END_URL}/api/chapters/${params.courseId}`);
   const courseChapters :{title: string, _id: string, isPublished: boolean, position: number, isFree: string}[]= await courseChaptersRes.json()
 
   // courseChapters.sort((a,b) => a.position - b.position)
@@ -145,37 +145,3 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 
 export default CourseIdPage;
 
-// interface courseProp {
-//     title : string
-// }
-
-// const CourseIdPage = ({course} : {course : courseProp}) => {
-//     return (
-//         <div>
-//             {course? course.title : <ClerkLoading/>}
-//             lskdjflskdjflsdkj
-//         </div>
-//       );
-// }
-
-// export default CourseIdPage;
-
-// import { ClerkLoading } from "@clerk/nextjs";
-// import axios from "axios";
-// import { useParams } from "next/navigation";
-// import { useState,useEffect } from "react";
-// export function Fe(){
-
-//     const [course,setCourse] = useState<courseProp>({title:""})
-//     const {courseId} = useParams()
-
-//     useEffect(()=>{
-//              axios
-//        .get(`http://127.0.0.1:5000/api/courses/${courseId}`)
-//          .then((res) => setCourse(res.data))
-//          .catch((err) => console.error("Course fetch error", err));
-//     },[courseId])
-
-//     console.log(course)
-//     return <CourseIdPage course={course} />
-// }

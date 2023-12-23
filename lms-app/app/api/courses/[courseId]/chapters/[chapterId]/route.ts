@@ -15,14 +15,14 @@ export async function DELETE(req:Request, { params } : { params: { courseId: str
             return new NextResponse("Unauthorized access denied", {status: 401})
         }
 
-         const exitsingMuxData = await axios.get(`http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`)
+         const exitsingMuxData = await axios.get(`${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`)
 
             if(exitsingMuxData.data.assetId){
                 await Video.Assets.del(exitsingMuxData.data.assetId)
             }
 
 
-        await axios.delete((`http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`))
+        await axios.delete((`${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`))
         
 
         return new NextResponse("chapter deleted!!")
@@ -54,24 +54,20 @@ export async function PATCH(req: Request, { params } : { params : { courseId: st
         
         if(values.videoUrl){
 
-            console.log("befforeeeee")
-            const exitsingMuxData = await axios.get(`http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`)
-            console.log("22222222222222lkjsdf",exitsingMuxData, "eeeee")
+            const exitsingMuxData = await axios.get(`${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`)
             // if(exitsingMuxData.data.assetId){
             //     await Video.Assets.del(exitsingMuxData.data.assetId)
             // }
-            console.log("33333333333lskjdf")
             const asset = await Video.Assets.create({
                 input: values.videoUrl,
                 playback_policy: "public",
                 test: false
             })
             
-            console.log("444444444444lkj")
-             chapter = await axios.patch(`http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`,{...values,userId, assetId: asset.id, playbackId: asset.playback_ids?.[0]?.id})
+             chapter = await axios.patch(`${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`,{...values,userId, assetId: asset.id, playbackId: asset.playback_ids?.[0]?.id})
             
         }else{
-             chapter = await axios.patch(`http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`,{...values,userId})
+             chapter = await axios.patch(`${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`,{...values,userId})
         }
             
 

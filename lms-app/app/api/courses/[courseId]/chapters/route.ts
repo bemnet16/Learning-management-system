@@ -15,7 +15,7 @@ export async function POST(
     const { courseId } = params;
     const values = await req.json();
 
-    const chapter = await axios.post(`http://127.0.0.1:5000/api/chapters`, {
+    const chapter = await axios.post(`${process.env.BACK_END_URL}/api/chapters`, {
       ...values,
       courseId,
       userId,

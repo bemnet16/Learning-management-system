@@ -18,7 +18,7 @@ export async function POST(
     }
 
     const course = (
-      await axios.get(`http://127.0.0.1:5000/api/courses/${params.courseId}`)
+      await axios.get(`${process.env.BACK_END_URL}/api/courses/${params.courseId}`)
     ).data;
     if (!course) {
       return new NextResponse("No Course Found!", { status: 404 });
@@ -44,7 +44,7 @@ export async function POST(
     ];
 
     let stripeCustomer: { stripeCustomerId: string } = (
-      await axios.get(`http://127.0.0.1:5000/api/stripeCustomers/${user.id}`)
+      await axios.get(`${process.env.BACK_END_URL}/api/stripeCustomers/${user.id}`)
     ).data;
 
     if (!stripeCustomer) {
@@ -53,7 +53,7 @@ export async function POST(
       });
 
       stripeCustomer = (
-        await axios.post(`http://127.0.0.1:5000/api/stripeCustomers`, {
+        await axios.post(`${process.env.BACK_END_URL}/api/stripeCustomers`, {
           email: user.emailAddresses[0].emailAddress,
           userId: user.id,
           stripeCustomerId: customer.id,

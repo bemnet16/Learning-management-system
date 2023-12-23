@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAnalytics = async (userId: string) => {
   try {
-    const courses = (await axios.get(`http://127.0.0.1:5000/api/courses`)).data;
+    const courses = (await axios.get(`${process.env.BACK_END_URL}/api/courses`)).data;
     const grouped: { [courseTitle: string]: number } = {};
 
     courses.forEach((course: any) => {

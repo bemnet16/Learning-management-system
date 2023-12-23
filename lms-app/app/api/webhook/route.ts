@@ -33,7 +33,7 @@ export async function POST(req:Request) {
         }
 
 
-        await axios.post(`http://127.0.0.1:5000/api/courses/${courseId}/user/${userId}/purchased`)
+        await axios.post(`${process.env.BACK_END_URL}/api/courses/${courseId}/user/${userId}/purchased`)
 
     }else{
         return new NextResponse(`Webhook Error : unhandled event type ${event.type}`,{ status: 200})

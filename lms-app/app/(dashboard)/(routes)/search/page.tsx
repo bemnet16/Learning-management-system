@@ -22,7 +22,7 @@ const SearchPage = async ({ searchParams } : searchPageProps) => {
   }
 
   const categories = await (
-    await axios.get("http://127.0.0.1:5000/api/category")
+    await axios.get(`${process.env.BACK_END_URL}/api/category`)
   ).data;
 
 

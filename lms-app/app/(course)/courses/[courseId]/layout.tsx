@@ -14,9 +14,9 @@ const CourseLayout = async ({
         return redirect("/")
     }
 
-const course = (await axios.get(`http://127.0.0.1:5000/api/courses/${params.courseId}`)).data
+const course = (await axios.get(`${process.env.BACK_END_URL}/api/courses/${params.courseId}`)).data
 
-const chapters = await (await axios.get(`http://127.0.0.1:5000/api/chapters/${params.courseId}/published`)).data
+const chapters = await (await axios.get(`${process.env.BACK_END_URL}/api/chapters/${params.courseId}/published`)).data
 
 
 

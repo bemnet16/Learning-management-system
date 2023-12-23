@@ -12,7 +12,7 @@ export async function POST(req: Request, { params } : {params : { courseId : str
         const {courseId} = params
         const url = await req.json()
 
-        const course = await axios.post(`http://127.0.0.1:5000/api/courses/${courseId}/attachments`,{...url,userId})
+        const course = await axios.post(`${process.env.BACK_END_URL}/api/courses/${courseId}/attachments`,{...url,userId})
 
         console.log("uuuu",url)
         return new NextResponse(course.data)

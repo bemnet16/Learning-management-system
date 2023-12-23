@@ -14,7 +14,7 @@ const CoursesPage = async () => {
         return redirect("/")
     }
 
-    const courses = await (await axios.get("http://127.0.0.1:5000/api/courses")).data
+    const courses = await (await axios.get(`${process.env.BACK_END_URL}/api/courses`)).data
 
     return ( 
         <div className="p-6">

@@ -23,7 +23,7 @@ const ChapterIdPage = async ({
 
   const chapter = await (
     await axios.get(
-      `http://127.0.0.1:5000/api/chapters/${params.chapterId}/course/${params.courseId}`
+      `${process.env.BACK_END_URL}/api/chapters/${params.chapterId}/course/${params.courseId}`
     )
   ).data;
 

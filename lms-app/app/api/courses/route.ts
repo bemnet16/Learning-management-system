@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
     if (!userId) return new NextResponse("Unauthorized", { status: 401 });
 
-    const course = await axios.post("http://127.0.0.1:5000/api/courses", {
+    const course = await axios.post(`${process.env.BACK_END_URL}/api/courses`, {
       userId,
       title,
     });
