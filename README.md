@@ -16,7 +16,7 @@ Document and Image Uploads: Utilizing UploadThing for hassle-free file managemen
 
 ## Technologies Used
 
-     **Frontend**
+     `**Frontend**`
 Next.js (13.4.12)
 React (18.2.0)
 Tailwind CSS (3.3.5)
