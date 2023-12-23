@@ -2,6 +2,14 @@
 # Introduction
 Welcome to the LMS App - a state-of-the-art Learning Management System designed to provide an interactive and comprehensive online learning experience. Built with Next.js and Express.js, this platform is equipped with advanced features for course management, student engagement, and secure, seamless user experiences.
 
+## Application Screenshots
+
+<img src="[URL_of_your_image](https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D)" alt="Dashboard View" width="600"/>
+
+<img src="[URL_of_your_image](https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D)" alt="Course Page" width="600"/>
+
+
+
 # Appreance
 ![Alt text for the image](https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D)
 
