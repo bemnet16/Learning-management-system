@@ -11,11 +11,11 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Courses page**
 ###### Teacher/Admin to see course lists
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="300" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="300" width="600" />
 
 **Courses/:courseId page**
 <p align="center">
-###### Teacher/Admin to (create, edit, delete, and see full detail) course
+###### Teacher/Admin to create, edit, delete, and see full detail course
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page" height="400" />
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="400" />
 </p>
@@ -40,7 +40,7 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Stripe for payment process**
 ###### Customers check out payment proccess
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(291).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(299).png" alt="Course Page" height="400" />
 
 **Chapter page**
 ###### Customers can see course attachments, their progress after purchased the course
