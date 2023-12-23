@@ -11,17 +11,17 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Courses page**
 ###### Teacher/Admin to see course lists
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page"height="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="300" />
 
 **Courses/:courseId page**
 ###### Teacher/Admin to (create, edit, delete, and see full detail) course
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page height="500" />
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(289).png" alt="Course Page" height="300" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(290).png" alt="Course Page" height="300" />
 
 **Chapter page**
 ###### Teacher/Admin to (create, edit, delete, and see full detail) chapter for a course
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(293).png" alt="Course Page" height="500" />
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(294).png" alt="Course Page" height="500" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(293).png" alt="Course Page" height="400" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(294).png" alt="Course Page" height="400" />
 **Analytics page**
 ###### Teacher/Admin to analyze how much course are sold and how much revenue gained
 <img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(291).png" alt="Course Page" width="600" height="500" />
