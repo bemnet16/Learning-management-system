@@ -11,7 +11,7 @@ Welcome to the LMS App - a state-of-the-art Learning Management System designed 
 
 **Courses page**
 ###### Teacher/Admin to see course lists
-<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(287).png" alt="Course Page" height="auto" width="600" />
+<img src="https://github.com/bemnet16/Learning-management-system/blob/UI-Preview/screenshots/Screenshot%20(305).png" alt="Course Page" height="auto" width="600" />
 
 **Courses/:courseId page**
 ###### Teacher/Admin to create, edit, delete, and see full detail course
